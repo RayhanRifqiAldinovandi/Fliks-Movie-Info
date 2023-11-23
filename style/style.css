@@ -1,0 +1,131 @@
+*,body{
+    margin:0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+}
+header{
+    padding: 20px;
+    background-color: #1a0511;
+}
+.navbar{
+    display: flex;
+    color: #f7d4e8 ;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar>h1{
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+.navbar>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar>ul>li{
+    list-style: none;
+    padding: 8px;
+}
+.navbar>ul>li>a{
+    color: #f7d4e8;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+}
+.movie{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.grad{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,rgba(26, 5,17, 1.3),rgba(0,0,0,0.5));
+    position: absolute;
+    top: 0;
+
+}
+.desc-container{
+    position: relative;
+    margin-left: 15px;
+    top: 30%;
+    transform: translateY(30%);
+    padding-left: 15px;
+    z-index: 1;
+}
+.desc-items{
+    position: absolute;
+    color: #f9d7ea;
+    max-width: 90%;
+}
+.desc-items>li{
+    list-style: none;
+    font-size: clamp(12px,1.5vw,2.5vw) ;
+}
+.movie>img{
+    width: 100%;
+    height: 100%;
+}
+.genres-container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    font-family: 'Lora', serif;
+    width: 100%;
+    justify-content: space-between;
+    color: #f7d4e8;
+    background-color: #1a0511;
+}
+.genres{
+    margin: 15px;
+}
+.action{
+    flex-direction: row;
+    justify-content: center;
+}
+.genres>.action>a>img,.genres>.comedy>a>img{
+    margin-top: 8px;
+    width:120px;
+    height:auto;
+    border-radius: 20px;
+}
+.genres>.action>a>img:hover,.genres>.comedy>a>img:hover{
+    width:130px;
+    border: 5px,solid,crimson;
+    transition: ease-in .6s;
+}
+footer{
+    width: 100%;
+}
+.footing{
+    display: flex;
+    background-color: #1a0511;
+    color:#f7d4e8;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lora', serif;
+}
+.buttons{
+    margin-top: 8px;
+}
+#watch-trailer{
+    width: 100px;
+    height:30px;
+    font-family: 'Lora', serif;
+    margin-right:8px;
+    background-color: #0b413d;
+    color: #f7d4e8;
+    border-radius: 40px;
+}
+#more-info{
+    width: 100px;
+    height:30px;
+    font-family: 'Lora', serif;
+    background-color: #0b413d;
+    color: #f7d4e8;
+    border-radius: 40px;
+}
